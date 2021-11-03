@@ -47,7 +47,7 @@ const age1 = calcAge1(1975)
 console.log(age1, 'age 1')
 
 
-//function expression (expression produce values)
+//function expression (expression produce values... and values can be tied to a variable)
 const calcAge2 = function (birthYear) {
     return 2021 - birthYear
 }
