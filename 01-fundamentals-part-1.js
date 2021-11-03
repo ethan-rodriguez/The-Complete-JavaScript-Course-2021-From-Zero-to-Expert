@@ -227,8 +227,14 @@ let js = 'amazing';
 // }
 
 
-const age = 32
+// const age = 32
 
-const drink = age >= 18 ? 'wine 🍷' : 'water 💧';
+// const drink = age >= 18 ? 'wine 🍷' : 'water 💧';
 
-console.log(drink)
+// console.log(drink)
+
+//DURING DEVEOLPMENT: simply use laterst google chrome
+
+//DURING PRODUCTION: Use bable to transpile and polyfil your code (conveert back to ES5 to ensure browser compatibility for all users)
+
+//ES5 fully suported by all browsers
