@@ -147,18 +147,37 @@
 //CODING CHALLENGE FROM Charlene.
 //Given a string, your task is to replace each of its charcters by the next one in the English aplhabet; ie replace a with b,
 
-function alphabeticChange(string) {
-    // let charToAscii = string.charCodeAt(0)
-    // console.log(charToAscii)
+// function alphabeticChange(string) {
+//     // let charToAscii = string.charCodeAt(0)
+//     // console.log(charToAscii)
 
-    // let asciiToChar = String.fromCharCode(charToAscii) //how to turn number into character
-    // console.log(asciiToChar)
+//     // let asciiToChar = String.fromCharCode(charToAscii) //how to turn number into character
+//     // console.log(asciiToChar)
 
-    let stringSplit = string.split('')
+//     let stringSplit = string.split('')
 
-    let asciiArr = stringSplit.map((letter, idx) => String.fromCharCode(string.charCodeAt(idx) + 1)).join('').replace('{', 'a')
+//     let asciiArr = stringSplit.map((letter, idx) => String.fromCharCode(string.charCodeAt(idx) + 1)).join('').replace('{', 'a')
 
-    console.log(asciiArr, 'map')
+//     console.log(asciiArr, 'map')
+// }
+
+// alphabeticChange('crazy')
+
+
+const calcAge = function(birthYear) {
+    return 2037 - birthYear
 }
 
-alphabeticChange('crazy')
+const yearsUntilRetirement = function(birthYear, firstName) {
+    const age = calcAge(birthYear)
+    const retirement = 65 - age
+    if(retirement > 0){
+        return retirement
+    } else {
+        return -1
+    }
+    // return `${firstName} retires in ${retirement} years`
+}
+
+console.log(yearsUntilRetirement(1991, 'Jonas'))
+console.log(yearsUntilRetirement(1950, 'Mike'))
