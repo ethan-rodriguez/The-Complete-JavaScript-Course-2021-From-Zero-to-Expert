@@ -253,3 +253,36 @@
 
 // const ages = [calcAge([years[0]]), calcAge([years[1]])]
 // console.log(ages)
+
+
+// const friends = ['Michael', 'Steven', 'Peter']
+
+// // ADD ELEMENTS
+// const newLength = friends.push('Jay')
+// console.log(newLength)
+
+// friends.unshift('John')
+// console.log(friends)
+
+// //REMOVE ELEMENTS
+// friends.pop() // Last
+// const popped = friends.pop()
+// console.log(popped)
+// console.log(friends)
+
+// friends.shift() // First
+// console.log(friends)
+
+// console.log(friends.indexOf('Steven'))
+// console.log(friends.indexOf('Bob'))
+
+
+
+// console.log(friends.includes('Steven'))
+// console.log(friends.includes('Bob'))
+
+// if (friends.includes('Steven')) {
+//     console.log('You have a friend')
+// } else {
+//     console.log('You dont have any friends')
+// }
