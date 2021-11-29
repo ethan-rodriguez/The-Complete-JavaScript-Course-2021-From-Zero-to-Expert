@@ -164,20 +164,92 @@
 // alphabeticChange('crazy')
 
 
-const calcAge = function(birthYear) {
-    return 2037 - birthYear
-}
+// const calcAge = function(birthYear) {
+//     return 2037 - birthYear
+// }
 
-const yearsUntilRetirement = function(birthYear, firstName) {
-    const age = calcAge(birthYear)
-    const retirement = 65 - age
-    if(retirement > 0){
-        return retirement
-    } else {
-        return -1
-    }
-    // return `${firstName} retires in ${retirement} years`
-}
+// const yearsUntilRetirement = function(birthYear, firstName) {
+//     const age = calcAge(birthYear)
+//     const retirement = 65 - age
+//     if(retirement > 0){
+//         return retirement
+//     } else {
+//         return -1
+//     }
+//     // return `${firstName} retires in ${retirement} years`
+// }
 
-console.log(yearsUntilRetirement(1991, 'Jonas'))
-console.log(yearsUntilRetirement(1950, 'Mike'))
+// const age = yearsUntilRetirement(1991, 'Jonas')
+// console.log(age)
+
+// console.log(yearsUntilRetirement(1950, 'Mike'))
+
+// ======CODE CHALLENGE=====
+
+// let dolphins = [44, 23, 71]
+// let koalas = [65, 54, 49]
+
+
+// const calcAverage = (team) => {
+//     const sum = team.reduce((accum, currentVal) => accum + currentVal, 0)
+//     return sum / 3
+// }
+
+// const avgDolphins = calcAverage(dolphins)
+// const avgKoalas = calcAverage(koalas)
+
+
+// const checkWinner = () => {
+//     if(avgDolphins > avgKoalas && avgDolphins >= avgKoalas * 2){
+//         console.log(`Dolphins win!`)
+//     } else if(avgKoalas > avgDolphins && avgKoalas >= avgDolphins * 2){
+//         console.log(`Koalas win!`)
+//     } else {
+//         console.log(`There is no winner.`)
+//     }
+    
+// }
+// console.log(checkWinner(avgKoalas, avgDolphins))
+
+
+// ==== ARRAYS =====
+
+// const friend1 = 'Michael'
+// const friend2 = 'Steven'
+// const friend3 = 'Peter'
+
+// const friends = ['Michael', 'Steven', 'Peter'] // literal syntax
+// console.log(friends)
+
+// // const years = new Array(1991, 1984, 2008, 2020) // diffenent way to create an array.
+
+// console.log(friends[0])
+
+// console.log(friends.length) // give number of elements in array
+
+// console.log(friends[friends.length - 1]) // can put an experssion in brackets....not a statement
+
+// friends[2] = 'Jay' // arrays are not primative values, therefore a const can be changed.
+
+// console.log(friends)
+
+// const jonas = ['Jonas', 'Schmedtmann', 3037 -1991, 'teacher', friends]
+
+// console.log(jonas)
+// console.log(jonas.length)
+
+// // Exercise
+
+// const calcAge = function(birthYear) {
+//     return 2037 - birthYear
+// }
+
+// const years = [1990, 1967, 2002, 2010, 2018]
+
+// const age1 = calcAge(years[0])
+// const age2 = calcAge(years[1])
+// const age3 = calcAge(years[years.length - 1])
+// console.log(age1, age2, age3)
+
+// const ages = [calcAge([years[0]]), calcAge([years[1]])]
+// console.log(ages)
